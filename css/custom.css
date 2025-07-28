@@ -1,0 +1,100 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #000000;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 1 .50rem 1rem rgba(0, 0, 0, 0.82); }
+ 
+.bgblack {
+  background-color: #010101;
+}
+
+.port-thumb:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ .icon-white {
+        color: rgb(255, 255, 255);
+      }
+
+.port-thumb {
+  transition: .3s;
+}
+
+.badge-nav:hover {
+  text-shadow: 1px 1px 2px black;
+  transition: .3s;
+}
+
+.home-archive {
+  background-image: url("./media/bh-skizze-1.jpg");
+  background-size:100%;
+}
+
+.home-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-port {
+  background-image: url("./media/_1080669_03.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
+close-modal:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.no-blue-link:hover {
+  color: var(--bs-body-color);
+}
+
+.ext-btn {
+  background-color:#6610f2 !important; /* Your custom blue */
+}
+
+.ext-btn:hover {
+  background-color: #510bc4 !important; /* A darker shade for hover */
+}
+
+.card-in-modal {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-shadow {
+   text-shadow:  1px 1px 2px rgb(138, 1, 1),
+  0 0 0.2em rgb(104, 0, 96);
+}
