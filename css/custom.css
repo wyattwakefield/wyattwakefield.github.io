@@ -2,18 +2,31 @@
   --jumbotron-padding-y: 3rem;
 }
 
+body {
+  height: 100vh;
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   background-color: #000000;
 }
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
     padding-bottom: calc(var(--jumbotron-padding-y) * 2);
   }
 }
+
+
+@media (min-width: 768px) {
+            img {
+    border-radius:0.333rem 0px 0px 0.333rem;  
+            }
+          }
+
 
 .jumbotron p:last-child {
   margin-bottom: 0;
@@ -88,6 +101,17 @@ close-modal:hover {
 
 .ext-btn:hover {
   background-color: #510bc4 !important; /* A darker shade for hover */
+}
+
+@font-face {                  
+font-family: 'Jacquard12';
+src: url(../fonts/Jacquard12-Regular.woff2) format('woff2');
+font-weight: normal;
+font-style: normal;
+} 
+
+.custom-font {
+  font-family: 'Jacquard12';
 }
 
 .card-in-modal {
