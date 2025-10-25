@@ -1,25 +1,13 @@
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "") {
+    x.innerHTML = "<audio controls class=\"w-100\"><source src=\"./media/kette/jedwedes.ogg\" type=\"audio/ogg\"/></audio>";
+  } else {
+    x.innerHTML = "";
+  }
+};
 
 
-document.addEventListener('click', function(e) {
-      e = e || window.event;
-      var target = e.target || e.srcElement;
-
-      if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
-        if (target.hasAttribute('data-target')) {
-          var m_ID = target.getAttribute('data-target');
-          document.getElementById(m_ID).classList.add('open');
-
-          e.preventDefault();
-        }
-      }
-
-      if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal')) {
-        var modal = document.querySelector('[class="modal open"]');
-        modal.classList.remove('open');
-        modal.getElementsByTagName("player")[0].pause();
-        e.preventDefault();
-
-      }
-    }, false);
-
-    
+document.getElementById('stopButton').addEventListener('click', () => {
+  document.querySelectorAll('audio').forEach(el => el.pause());
+});

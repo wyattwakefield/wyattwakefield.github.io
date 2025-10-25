@@ -20,13 +20,11 @@ body {
   }
 }
 
-
-@media (min-width: 768px) {
-            img {
-    border-radius:0.333rem 0px 0px 0.333rem;  
+@media (max-width: 768px) {
+            .about-img {
+    border-radius:px;  
             }
           }
-
 
 .jumbotron p:last-child {
   margin-bottom: 0;
@@ -59,9 +57,9 @@ footer p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
- .icon-white {
+.icon-white {
         color: rgb(255, 255, 255);
-      }
+}
 
 .port-thumb {
   transition: .3s;
