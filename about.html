@@ -16,7 +16,7 @@
 
   </head>
 
-  <body class="container-fluid p-0 min-100 d-flex flex-column">
+  <body class="container-fluid p-0 min-100 d-flex flex-column" style="background-image: url()">
 
     <header>
       <nav class="navbar mb-auto navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -31,6 +31,9 @@
           <a class="nav-link" href="./portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="./music-ed.html">Music Education</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">About</a>
         </li>
         </div>
@@ -40,23 +43,27 @@
 
 <!-- MAIN -->
 
-<main role="main" class="mb-auto bg-dark">
-  <div class="album py-3">
-    <div class="container">
+<main role="main" class="mb-auto">
+  <h2 class="display-5 text-center pt-2">About</h2>
+  <div class="album">
+    <div class="container pb-3">
       <div class="row">
-       
         <div class="col d-flex justify-content-center">
-          <div class="card card-in-modal bg-body-tertiary border-0" style="max-width: 800px;">
+
+          <div class="card card-in-modal overflow-hidden rounded border-0 bg-body-tertiary" style="max-width: 800px;">
             <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./media/about/selfie.jpg" class="img-fluid about-image" alt="...">
+              <div class="col-md-4 overflow-hidden about-img bg-black align-content-center">
+                <img src="./media/about/selfie.jpg" class="overflow-hidden about-img img-fluid" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title"><strong>About</strong></h5>
                     <p class="card-text">
-                      Wyatt Wakefield ist ein Musiker mit internationalem Ausbildungshintergrund. Nach einem Doppel-Bachelor in Komposition und Musiktheoriepädagogik an der Kunstuniversität Graz vertieft er sein Wissen in einem Masterstudium an der Zürcher Hochschule der Künste.
-                      Neben seiner akademischen Laufbahn hat er Musiktheorie für verschiedene Altersgruppen unterrichtet, Kompositionswerkstätten geleitet und Musikvermittlungs-Workshops für Chöre und Studierende konzipiert.
+                      Wyatt Wakefield (geboren 1994 in Morro Bay, Kalifornien) ist ein Musiker mit internationalem Ausbildungshintergrund. Nach einem Doppel-Bachelor in Komposition und Musiktheoriepädagogik an der Kunstuniversität Graz vertieft er sein Wissen in einem Masterstudium an der Zürcher Hochschule der Künste.
+                      Neben seiner akademischen Laufbahn hat er Musiktheorie für verschiedene Altersgruppen unterrichtet, Kompositionswerkstätten und Musikvermittlungs-Workshops für Chöre und Studierende geleitet.
+                    </p><hr>
+                    <p class="text-muted" style="font-size:small;">
+                      [<i>Wyatt Wakefield (born 1994 in Morro Bay, California) is a musician & music educator with an international educational background. After completing a Double Bachelor in Composition and Music Theory Pedagogy at the University of Performing Art Graz (Austria), Wyatt furthered his spezialization through a Master Degree at the Zürich University of the Arts (Switzerland).
+                      Alongside his studies, Wyatt has taught music theory to various age groups, as well as co-lead workshops in music composition for students.</i>]
                     </p>
                 </div>
               </div>
@@ -68,6 +75,14 @@
     </div>
 
     </main>
+
+    <nav class="navbar bg-body-tertiary" style="z-index: 1;">
+  <div class="container-fluid justify-content-end">
+    <span class="navbar-text">
+       <small>2025</small>
+      </span>
+  </div>
+</nav>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

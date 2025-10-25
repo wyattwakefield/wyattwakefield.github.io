@@ -13,6 +13,7 @@
     <!-- Custom styles for this template -->
     <link href="./css/custom.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./css/sircl-bundled.min.css" rel="stylesheet">
 
   </head>
 
@@ -30,6 +31,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="./music-ed.html">Music Education</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="./about.html">About</a>
         </li>
@@ -43,7 +47,7 @@
   <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content border-0 bg-dark">
        <div class="modal-header py-2 justify-content-end">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn btn-sm btn-secondary py-0 px-1" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
        
        </div>
       <div class="modal-body pt-0">
@@ -485,8 +489,8 @@
        </div>
 
   <div class="tab-pane fade pt-2" id="kette-audio-2" role="tabpanel" aria-labelledby="kette-audio-2-tab" tabindex="0">
-    <audio controls class="w-100">
-            <source src="./media/kette/jedwedes.ogg" type="audio/ogg"/></audio>
+    <audio controls id="player" class="w-100">
+                <source src="./media/kette/jedwedes.ogg" type="audio/ogg"/></audio>
   </div>
 
   <div class="tab-pane fade pt-2" id="kette-audio-3" role="tabpanel" aria-labelledby="kette-audio-3-tab" tabindex="0">
@@ -513,22 +517,20 @@
     </div>
    </div>
  
-
-
-
 <!-- MAIN -->
     <main role="main" class="mb-auto bg-dark">
-      <div class="album py-3">
+      <h2 class="display-5 text-center py-2">Portfolio</h2>
+      <div class="album pb-2">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4">
 
             <div class="col">
               <div class="card h-100 border-0 bg-body-tertiary port-thumb">
            <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#notenbuechlein">
-           <img class="card-img-top rounded-top rounded-bottom-0" src="./media/notenbuechlein/164_kug_notenbuechlein_©_johannes_gellner_1000px.jpg" alt="Card image cap">
+           <img class="card-img-top rounded-top rounded-bottom-0" src="./media/portfolio/164_kug_notenbuechlein_©_johannes_gellner_1000px.jpg" alt="Card image cap">
            <div class="card-body text-start rounded-bottom border-top-0">
-              <h5 class="card-title">Notenbüchlein</h5>
-              <p class="card-text">für Anna Magdalena B.</p>
+              <h5 class="card-title fw-semibold">Notenbüchlein</h5>
+              <p class="card-text text-muted">für Anna Magdalena B.</p>
             </div>
                 </button>
               </div>
@@ -537,32 +539,69 @@
             <div class="col">
               <div class="card h-100 border-0 bg-body-tertiary port-thumb">
             <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#tempest">
-              <img class="card-img-top rounded-top rounded-bottom-0" src="./media/tempest/0136_kug_temp-est_©_johannes_gellner_1000px.jpg" alt="Card image cap">
+              <img class="card-img-top rounded-top rounded-bottom-0" src="./media/portfolio/0136_kug_temp-est_©_johannes_gellner_1000px.jpg" alt="Card image cap">
                 <div class="card-body text-start rounded-bottom border-top-0">
-              <h5 class="card-title">TEMP:EST</h5>
-              <p class="card-text">Mein Leben im kommenden Sturm</p>
+              <h5 class="card-title fw-semibold">TEMP:EST</h5>
+              <p class="card-text text-muted">Mein Leben im kommenden Sturm</p>
              </div>
               </button>
               </div>
             </div>
                  
             <div class="col">
-              <div class="card h-100 border-0 bg-body-tertiary port-thumb">
+              <div class="card border-0 bg-body-tertiary port-thumb">
             <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#kette">
-                <img class="card-img-top rounded-top rounded-bottom-0" src="./media/kette/181_kug_kette_der_ricke_©_johannes_gellner_1000px.jpg" alt="Card image cap">
+                <img class="card-img-top rounded-top rounded-bottom-0" src="./media/portfolio/181_kug_kette_der_ricke_©_johannes_gellner_1000px.jpg" alt="Card image cap">
                <div class="card-body text-start rounded-bottom border-top-0">
-              <h5 class="card-title">Die Kette der Ricke</h5>
-              <p class="card-text">Was hat dieser Sommer mit mir zu tun?</p>
+              <h5 class="card-title fw-semibold">Die Kette der Ricke</h5>
+              <p class="card-text text-muted">Was hat dieser Sommer mit mir zu tun?</p>
              </div>
-        
               </button>
               </div>
             </div>
 
-</div>
+             <div class="col">
+              <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Under construction!">
+              <div class="card border-0 bg-body-tertiary">
+            <button disabled type="button" class="btn border-0 p-0">
+                <img class="card-img-top rounded-top rounded-bottom-0" src="./media/portfolio/pandora.jpg" alt="Card image cap">
+               <div class="card-body text-start rounded-bottom border-top-0">
+              <h5 class="card-title fw-semibold">Pandora</h5>
+              <p class="card-text text-muted">a short music-film</p>
+             </div>
+              </button>
+              </div>
+              </span>
+            </div>
 
+            <div class="col">
+              <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Under construction!">
+              <div class="card border-0 bg-body-tertiary">
+            <button disabled type="button" class="btn border-0 p-0">
+                <img class="card-img-top rounded-top rounded-bottom-0" src="./media/portfolio/xray.jpg" alt="Card image cap">
+               <div class="card-body text-start rounded-bottom border-top-0">
+              <h5 class="card-title fw-semibold">XRAY</h5>
+              <p class="card-text text-muted">music with video projection</p>
+             </div>
+              </button>
+              </div>
+              </span>
+            </div>
 
-
+            <div class="col">
+              <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Under construction!">
+              <div class="card border-0 bg-body-tertiary">
+            <button disabled type="button" class="btn border-0 p-0">
+                <img class="card-img-top rounded-top rounded-bottom-0" src="./media/portfolio/ct.jpg" alt="Card image cap">
+               <div class="card-body text-start rounded-bottom border-top-0">
+              <h5 class="card-title fw-semibold">Crystal Tears</h5>
+              <p class="card-text text-muted">music for two consorts</p>
+             </div>
+              </button>
+              </div>
+              </span>
+            </div>
+   
 
           </div>
         </div>
@@ -570,14 +609,22 @@
 
     </main>
 
+    <nav class="navbar mt-4 bg-body-tertiary">
+  <div class="container-fluid justify-content-end">
+    <span class="navbar-text">
+       <small>2025</small>
+      </span>
+  </div>
+</nav>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-     
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      <script src="./js/custom.js"></script>
+      <script src="./js/custom2.js"></script>
+
   </body>
 </html>
